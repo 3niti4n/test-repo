@@ -1,3 +1,5 @@
+
+// if-satser //
 let age = 16 
 let hasTicket = false
 let withAdult = true
@@ -21,6 +23,8 @@ if (isLoggedIn === true) {
     console.log("Du måste logga in först!")
 }
 
+// SWITCH-satser //
+
 const traficLight = "gul"
 
 switch (traficLight) {
@@ -36,4 +40,28 @@ switch (traficLight) {
 
     default : 
         console.log ("Okänd Signal") 
+}
+
+const weather = "regn"
+
+switch (weather) {
+    case "regn" :
+        console.log("Ta med ett paraply!")
+        break;
+    case "sol"  :
+        console.log("Glöm inte solglasögon!")
+        break;
+    case "snö"  :
+        console.log("Ta på dig en varm jacka!")
+        break;
+    default :
+       console.log ("Kolla väderappen igen.")
+}
+
+// FOR-LOOP //
+
+const fruits = ["banan", "äpple", "päron"]
+
+for (let i = 0; i < fruits.length; i++) {
+    console.log(fruits[i])
 }
