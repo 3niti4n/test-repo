@@ -60,8 +60,12 @@ switch (weather) {
 
 // FOR-LOOP //
 
-const fruits = ["banan", "äpple", "päron"]
+// while-loop //
 
-for (let i = 0; i < fruits.length; i++) {
-    console.log(fruits[i])
+let energi = 3;
+
+while (energi > 0) {
+    console.log("Sprang ett varv! Energi kvar: " + energi);
+    energi-- // Minskar energi med 1 efter varje varv!
 }
+console.log("Slut på energi, vila en stund")
