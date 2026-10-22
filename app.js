@@ -60,12 +60,12 @@ switch (weather) {
 
 // FOR-LOOP //
 
-// while-loop //
 
-let energi = 3;
-
-while (energi > 0) {
-    console.log("Sprang ett varv! Energi kvar: " + energi);
-    energi-- // Minskar energi med 1 efter varje varv!
+for (let i = 5; i >= 1; i--) {
+    if (i === 3) {
+        console.log(i + "- Halvvägs kvar!" )
+    } else {
+        console.log("Sekunder kvar: " + i)
+    }
 }
-console.log("Slut på energi, vila en stund")
+console.log("LIFTOFF!")
