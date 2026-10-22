@@ -20,3 +20,20 @@ if (isLoggedIn === true) {
 } else {
     console.log("Du måste logga in först!")
 }
+
+const traficLight = "gul"
+
+switch (traficLight) {
+    case "grön" : 
+        console.log("Kör")
+        break;
+    case "gul"  : 
+        console.log("Gör dig Redo!")
+        break;
+    case "röd"  : 
+        console.log("Stanna!")
+        break;
+
+    default : 
+        console.log ("Okänd Signal") 
+}
