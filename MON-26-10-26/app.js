@@ -1,15 +1,8 @@
-console.log("TESTAR KODEN");
 
-const skapaKonto = (name, age, roll = "Gäst") => {
-    console.log("hej", name, age, roll); 
+const valkommen = (name, title = "Medlem") => {
+    return `Välkommen ${title} ${name}!`;
+};
 
-    if (age < 18) {
-        return { message: "Du är inte myndig"};
-    }
+console.log(valkommen("Klara", "Admin"));
 
-    return { message: "Du är myndig"};
-}
-
-const skapaKontoObject = skapaKonto("Josef", 21, "Student");
-
-console.log(skapaKontoObject.message);
+console.log(valkommen("Leo"));
