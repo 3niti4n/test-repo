@@ -1,7 +1,12 @@
+const minaSteg = [4000, 8500, 12000, 3000, 10000];
 
-const halsaPa =(name, tidpuck = "dag") => {
-    return `God ${tidpuck}, ${name}!`;
+const rakneMedel = (rakneLista) => {
+    let summa = 0;
+    for (const nummer of rakneLista) {
+        summa += nummer;
+    }
+    return summa;
 };
 
-console.log(halsaPa("Leo", "morgon"));
-console.log(halsaPa("Klara"));
+const totala = rakneMedel(minaSteg);
+console.log(`Dina totala steg: ${totala}`);
