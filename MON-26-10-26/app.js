@@ -1,9 +1,13 @@
+const provPoints = [18, 22, 15, 28, 20];
 
+const countMedel = (provPointsArr) => {
+    let sum = 0
+    for (const point of provPointsArr) {
+        sum += point
+    }
 
-const welcome = (name, title = "Medlem") => {
-    return `Välkommen ${title} ${name}`
+    return sum / provPointsArr.length
 }
 
-console.log(welcome("Klara", "Admin"))
-
-console.log(welcome("Leo"))
+const medelvarde = countMedel(provPoints)
+console.log("Medelpoäng på provet: ", medelvarde)
