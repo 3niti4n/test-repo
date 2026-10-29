@@ -1,24 +1,22 @@
-const kunder = [
-    {name: "Mia", VIP: true, kopSumma: 1200 },
-    {name: "Sam", VIP: false, kopSumma: 450 },
-    {name: "Robin", VIP: true, kopSumma: 800 }
-]
-
-const getVipBonus = (kunderArr) => {
-    const result = []
-
-    for (const kund of kunderArr) {
-        if (kund.VIP === true) {
-        const rabatteradPris = kund.kopSumma * 0.9
-        const vipKund = {name: kund.name, kopSumma: rabatteradPris}
-        result.push(vipKund)
-    }
-
-  }
-
- return result
+const skrivUtTio = () => {
+    return 10
 }
 
-const vipBonus = getVipBonus(kunder)
+const minFunktion = callbackFn => {
+    const result = callbackFn()
 
-console.log(vipBonus)
+    return () => {
+        console.log("Josef")
+    }
+}
+
+const skrivUtResult = minFunktion(skrivUtTio)
+
+
+const siffror = [5, 12, 8, 20, 3];
+
+ const over10 = siffror.filter(siffra => {
+    return siffra > 10
+})
+
+console.log(over10)
